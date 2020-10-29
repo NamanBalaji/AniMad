@@ -44,7 +44,7 @@ const Home = ()=>{
           <h3>
             Made by Naman Balaji
           </h3>
-          <a href="">
+          <a href="https://github.com/NamanBalaji/AniMad">
             Github
           </a>
 
