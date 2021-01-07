@@ -9,7 +9,7 @@
   <li>Get the most popular anime</li>
  </ul>
  <h4>Working:</h4>
- The server scrapes data and episode limks from website and sends it as JSON response
+ The server scrapes data and episode links from website and sends it as JSON response
  <h4>Tech Stack:</h4>
  <ul>
   <li>Nodejs for backend(cheerio for webscraping)</li>
