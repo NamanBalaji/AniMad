@@ -6,7 +6,7 @@ const NavList = [
     },
     {
         id: 2, 
-        link: '/list/all/1',
+        link: '/list',
         text: 'List',
     },
     {

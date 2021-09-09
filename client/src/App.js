@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Genre from './components/Genre';
 import Home from './components/Home';
+import List from './components/List';
 import Navbar from './components/Navbar';
 import Popular from './components/Popular';
 
@@ -17,6 +18,9 @@ const App = ()=>{
       </Route>
       <Route exact path = '/popular'>
       <Popular />
+     </Route>
+     <Route exact path = '/list'>
+      <List />
      </Route>
     </Switch>
   </Router>

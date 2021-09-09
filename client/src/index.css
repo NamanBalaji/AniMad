@@ -14,17 +14,6 @@ code {
     monospace;
 }
 
-.card.anime .btn {
-  bottom: 1.5rem;
-  max-width: 80%;
-}
-
-.anime-card-h {
-  font-size: 1.75rem;
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    margin-bottom: 2rem;
-  }
+.link {
+  text-decoration: none;
 }

@@ -3,6 +3,7 @@ import {Link, useHistory} from 'react-router-dom';
 import { useGlobalContext } from '../utils/context';
 import AnimeCard from './AnimeCard';
 import Loading from './Loading';
+import '../index.css';
 
 const Home = () => {
     const history = useHistory();
@@ -36,7 +37,7 @@ const Home = () => {
                     data.map((anime, index)=>{
                         return (
                             <div className='col-sm-6 col-md-3 col-lg-3'>
-                        <Link to={`/watch/${anime.id}/${anime.episodeNumber}`}>
+                        <Link className='link' to={`/watch/${anime.id}/${anime.episodeNumber}`}>
                             <AnimeCard key={index} {...anime}/>
                         </Link>
                         </div>
