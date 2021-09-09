@@ -33,7 +33,7 @@ const GenreList = () => {
             <div className="mb-4" style={{"textAlign": "center"}}>
                 <h1 className="display-2">{type}</h1>
             </div>
-            <div className="row">
+            <div className="row mb-3">
                 {
                     data.map((anime, index)=>{
                         return (

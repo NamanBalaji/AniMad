@@ -31,7 +31,7 @@ const Search = () => {
 
     return isLoading ? <Loading /> : (
         <div className='container'>
-            <div className="row">
+            <div className="row mb-3">
                 {
                     data.map((anime, index)=>{
                         return (

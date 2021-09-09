@@ -22,7 +22,7 @@ const Genre = () => {
             <div className="mb-4" style={{"textAlign": "center"}}>
                 <h1 className="display-2">Genres</h1>
             </div>
-            <div className='row align-items-center'>
+            <div className='row align-items-center mb-3'>
             {
                 data.filter((d)=>d!=='Hentai')
                 .map((g, index)=>{

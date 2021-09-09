@@ -32,14 +32,14 @@ const Popular = () => {
             <div className="mb-4" style={{"textAlign": "center"}}>
                 <h1 className="display-2">Popular</h1>
             </div>
-            <div className="row">
+            <div className="row mb-3">
                 {
                     data.map((anime, index)=>{
                         return (
                             <div className='col-sm-6 col-md-3 col-lg-3'>
-                        <Link className="link" to={`/details/${anime.id}`}>
-                            <AnimeCard key={index} {...anime}/>
-                        </Link>
+                                <Link className="link" to={`/details/${anime.id}`}>
+                                    <AnimeCard key={index} {...anime}/>
+                                </Link>
                         </div>
                         )  
                     })
