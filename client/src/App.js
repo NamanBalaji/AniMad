@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AnimeDetail from './components/AnimeDetail';
+import Episode from './components/Episode';
 import Genre from './components/Genre';
 import GenreList from './components/GenreList';
 import Home from './components/Home';
@@ -34,6 +35,9 @@ const App = ()=>{
       <Route exact path = '/details/:id'>
        <AnimeDetail />
       </Route>
+      <Route exact path = '/watch/:id/:ep'>
+       <Episode />
+     </Route>
     </Switch>
   </Router>
 }
