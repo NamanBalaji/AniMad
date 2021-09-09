@@ -25,8 +25,8 @@ const Navbar = () => {
                         }
                     </ul>
                     <form className="d-flex" onSubmit={(e)=>{
-                        e.preventDefault();
-                        history.push(`/search/${term}/1`)
+                        history.push(`/search/${term}`)
+                        setTerm('');
                     }}>
                         <input className="form-control me-2" value={term} type="search" placeholder="Search" aria-label="Search" onChange={(e)=>setTerm(e.target.value)} />
                         <button className="btn btn-success" type="submit">Search</button>

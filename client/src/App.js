@@ -6,6 +6,7 @@ import Home from './components/Home';
 import List from './components/List';
 import Navbar from './components/Navbar';
 import Popular from './components/Popular';
+import Search from './components/Search';
 
 const App = ()=>{
   return <Router>
@@ -26,6 +27,9 @@ const App = ()=>{
      <Route exact path = '/genre/:type'>
       <GenreList />
       </Route>
+      <Route exact path = '/search/:term'>
+       <Search/>
+     </Route>
     </Switch>
   </Router>
 }
