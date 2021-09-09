@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AnimeDetail from './components/AnimeDetail';
 import Episode from './components/Episode';
 import Error from './components/Error';
+import Footer from './components/Footer';
 import Genre from './components/Genre';
 import GenreList from './components/GenreList';
 import Home from './components/Home';
@@ -43,6 +44,7 @@ const App = ()=>{
        <Error />
      </Route>
     </Switch>
+    <Footer />
   </Router>
 }
 
