@@ -1,19 +1,28 @@
 {
-  "name": "server",
+  "name": "animad",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "<h1> AniMad </h1>\r <h4>Anime streaming web app.</h4>\r <h4>Functionality:</h4>\r <ul>\r   <li>Stream episodes</li>\r   <li>Get lattest episodes</li>\r   <li>Search for anime</li>\r   <li>Get anime based on genre</li>\r   <li>Get the most popular anime</li>\r  </ul>\r  <h4>Working:</h4>\r  The server scrapes data and episode links from website and sends it as JSON response\r  <h4>Tech Stack:</h4>\r  <ul>\r   <li>Nodejs for backend(cheerio for webscraping)</li>\r   <li>React for frontend</li>\r  </ul>",
+  "main": "app.js",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.10",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "request": "^2.88.2",
     "vidstreaming-scraper": "^1.0.11"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamanBalaji/AniMad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamanBalaji/AniMad/issues"
+  },
+  "homepage": "https://github.com/NamanBalaji/AniMad#readme"
 }
