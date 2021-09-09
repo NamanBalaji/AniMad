@@ -4,6 +4,7 @@ import AnimeCard from './AnimeCard';
 import Loading from './Loading';
 import {Link, useHistory} from 'react-router-dom';
 import '../index.css';
+import Buttons from './Buttons';
 
 const Popular = () => {
     const history = useHistory();
@@ -13,7 +14,6 @@ const Popular = () => {
 
     useEffect(()=>{
         setIsLoading(true);
-        setPage(1);
         fetch(`/popular/${page}`)
         .then(res=> res.json())
         .then(doc => {
@@ -45,6 +45,7 @@ const Popular = () => {
                     })
                 }
             </div>
+            <Buttons setPage={setPage} page={page} />
         </div>
         
     )

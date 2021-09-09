@@ -4,6 +4,7 @@ import { useGlobalContext } from '../utils/context';
 import AnimeCard from './AnimeCard';
 import Loading from './Loading';
 import '../index.css';
+import Buttons from './Buttons';
 
 const Home = () => {
     const history = useHistory();
@@ -13,7 +14,6 @@ const Home = () => {
 
     useEffect(()=>{
         setIsLoading(true);
-        setPage(1);
         fetch(`/recentlyadded/${page}`)
         .then(res=> res.json())
         .then(doc => {
@@ -44,6 +44,7 @@ const Home = () => {
                         )  
                     })
                 }
+                <Buttons setPage={setPage} page={page} />
             </div>
         </div>
         

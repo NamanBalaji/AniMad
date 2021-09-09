@@ -37,7 +37,7 @@ const Episode = () => {
                 <h1 className="display-2">
                     You are watching <Link className='link' to={`/details/${id}`}>
                         {id.split("-").join(" ")}
-                    </Link>episode {ep}
+                    </Link> episode {ep}
                 </h1>
             </div>
             <VideoPlayer url = {url}/>

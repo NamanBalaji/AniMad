@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {Link, useParams, useHistory} from 'react-router-dom';
 import { useGlobalContext } from '../utils/context';
 import AnimeCard from './AnimeCard';
+import Buttons from './Buttons';
 import Loading from './Loading';
 
 const Search = () => {
@@ -44,6 +45,7 @@ const Search = () => {
                     })
                 }
             </div>
+            <Buttons setPage={setPage} page={page} />
         </div>
     )
 }

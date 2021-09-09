@@ -4,6 +4,7 @@ import AnimeCard from './AnimeCard';
 import Loading from './Loading';
 import {Link, useHistory, useParams} from 'react-router-dom';
 import '../index.css';
+import Buttons from './Buttons';
 
 const GenreList = () => {
     const history = useHistory();
@@ -46,6 +47,7 @@ const GenreList = () => {
                     })
                 }
             </div>
+            <Buttons setPage={setPage} page={page} />
         </div>
     )
 }

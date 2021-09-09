@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {Link, useParams, useHistory} from 'react-router-dom';
 import { useGlobalContext } from '../utils/context';
+import Buttons from './Buttons';
 import Loading from './Loading';
 
 
@@ -70,7 +71,8 @@ const List = () => {
                         )
                     })
                     }
-            </div>
+                </div>
+                <Buttons setPage={setPage} page={page} />
            </div>
         )
     )
