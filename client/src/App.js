@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Genre from './components/Genre';
+import GenreList from './components/GenreList';
 import Home from './components/Home';
 import List from './components/List';
 import Navbar from './components/Navbar';
@@ -22,6 +23,9 @@ const App = ()=>{
      <Route exact path = '/list'>
       <List />
      </Route>
+     <Route exact path = '/genre/:type'>
+      <GenreList />
+      </Route>
     </Switch>
   </Router>
 }

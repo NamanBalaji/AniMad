@@ -24,7 +24,8 @@ const Genre = () => {
             </div>
             <div className='row align-items-center'>
             {
-                data.map((g, index)=>{
+                data.filter((d)=>d!=='Hentai')
+                .map((g, index)=>{
                     return(
                         <div className='col-sm-6 col-md-4 col-lg-2 mt-4 d-flex align-items-stretch'>
                             <Link  className='link' to={`/genre/${g.split(" ").join("-")}`} key={index}>
