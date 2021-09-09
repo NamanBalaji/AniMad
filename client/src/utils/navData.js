@@ -1,7 +1,7 @@
 const NavList = [
     {
         id: 1,
-        link: '/popular/1',
+        link: '/popular',
         text: 'Popular',
     },
     {
