@@ -36,8 +36,8 @@ const Home = () => {
                 {
                     data.map((anime, index)=>{
                         return (
-                            <div className='col-sm-6 col-md-3 col-lg-3'>
-                        <Link className='link' to={`/watch/${anime.id}/${anime.episodeNumber}`}>
+                            <div className='col-sm-6 col-md-3 col-lg-3 mb-4'>
+                        <Link style={{ textDecoration: 'none' }} className='link' to={`/watch/${anime.id}/${anime.episodeNumber}`}>
                             <AnimeCard key={index} {...anime}/>
                         </Link>
                         </div>

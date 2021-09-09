@@ -28,7 +28,7 @@ const Genre = () => {
                 .map((g, index)=>{
                     return(
                         <div className='col-sm-6 col-md-4 col-lg-2 mt-4 d-flex align-items-stretch'>
-                            <Link  className='link' to={`/genre/${g.split(" ").join("-")}`} key={index}>
+                            <Link style={{ textDecoration: 'none' }}  className='link' to={`/genre/${g.split(" ").join("-")}`} key={index}>
                                 <h1>
                                     <span className="badge bg-transparent">
                                         {g}

@@ -36,8 +36,8 @@ const Search = () => {
                 {
                     data.map((anime, index)=>{
                         return (
-                            <div className='col-sm-6 col-md-3 col-lg-3'>
-                                <Link className="link" to={`/details/${anime.id}`}>
+                            <div className='col-sm-6 col-md-3 col-lg-3 mb-4'>
+                                <Link style={{ textDecoration: 'none' }} className="link" to={`/details/${anime.id}`}>
                                     <AnimeCard key={index} {...anime}/>
                                 </Link>
                         </div>

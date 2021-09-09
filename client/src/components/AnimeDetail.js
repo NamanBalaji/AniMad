@@ -44,9 +44,9 @@ const AnimeDetail = () => {
                 {
                     String(details.genres).split(',').map((genre, i)=>{
                         return(
-                            <div className="col-sm-4 col-md-2 col-lg-1">
+                            <div className="col-sm-4 col-md-2 col-lg-2">
                                 <h5>
-                                    <Link className="link" key={i} to={`/genre/${genre.split(" ").join("-")}`}><h2 style={{color:'white'}}>{genre}</h2></Link>
+                                    <Link style={{ textDecoration: 'none' }} className="link" key={i} to={`/genre/${genre.split(" ").join("-")}`}><h2 style={{color:'white'}}>{genre}</h2></Link>
                                 </h5> 
                             </div>
                         )
@@ -57,8 +57,8 @@ const AnimeDetail = () => {
                     {
                         ep===0 ? <span>Coming Soon</span> : epList().map((ep,index)=> {
                             return(
-                                <div className="col-sm-3 col-md-2 col-lg-1">
-                                    <Link key={index} to={`/watch/${id}/${ep}`}>
+                                <div className="col-sm-3 col-md-2 col-lg-1" style={{"textAlign": "center"}}>
+                                    <Link style={{ textDecoration: 'none' }} key={index} to={`/watch/${id}/${ep}`}>
                                        <h4 style={{color:"white"}}>{ep}</h4>
                                     </Link>
                                 </div>

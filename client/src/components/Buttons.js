@@ -12,7 +12,7 @@ const Buttons = ({setPage, page}) => {
     const nextPage = ()=>{
         setPage(page+1);
     }
-    
+
     return (
         <div className='row'>
             {page <=1 ? (
@@ -21,7 +21,7 @@ const Buttons = ({setPage, page}) => {
                     <button type="button" className="btn btn-success" onClick={prevPage}>Prev</button> 
                 </div>
             }
-            <div className= 'col-sm-2 offset-sm-10 col-md-2 offset-md-10 col-lg-2 offset-lg-10'>
+            <div className= 'col-sm-2 offset-sm-8 col-md-2 offset-md-8 col-lg-2 offset-lg-8'>
             <button type="button" className="btn btn-success" onClick={nextPage}>Next</button> 
             </div>
         </div>

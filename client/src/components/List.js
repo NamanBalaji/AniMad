@@ -44,12 +44,12 @@ const List = () => {
                 <div className="mb-4" style={{"textAlign": "center"}}>
                     <h1 className="display-2">Anime List</h1>
                 </div>
-                <div className="row align-items-center">
+                <div className="row align-items-center mb-5">
                 {
                     Alphabet().map((el,index)=>{
                         return(
                             <div className="col">   
-                                <Link onClick={()=>{setPage(1); setAlpha(el)}} key={index} to={`/list`}>
+                                <Link style={{ textDecoration: 'none' }} onClick={()=>{setPage(1); setAlpha(el)}} key={index} to={`/list`}>
                                     <h4 style={{color: "white"}}>{el}</h4>
                                 </Link>
                             </div>
@@ -61,8 +61,8 @@ const List = () => {
                 {
                     list.map((el, index)=>{
                         return (
-                            <div className="col-sm-6 col-md-6 col-lg-6 mt-2 mb-2">
-                                <Link key={index} to={`/details/${el.id}`}>
+                            <div className="col-sm-6 col-md-6 col-lg-6 mt-2 mb-4">
+                                <Link style={{ textDecoration: 'none' }} key={index} to={`/details/${el.id}`}>
                                     <h4 style={{color: "white"}}>
                                         {el.title}
                                     </h4>                            
