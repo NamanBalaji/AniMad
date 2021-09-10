@@ -1,17 +1,32 @@
-<h1> AniMad </h1>
-<h4>Anime streaming web app.</h4>
-<h4>Functionality:</h4>
-<ul>
-  <li>Stream episodes</li>
-  <li>Get latest episodes</li>
-  <li>Search for anime</li>
-  <li>Get anime based on genre</li>
-  <li>Get the most popular anime</li>
- </ul>
- <h4>Working:</h4>
- The server scrapes data and episode links from website and sends it as JSON response
- <h4>Tech Stack:</h4>
- <ul>
-  <li>Nodejs for backend(cheerio for webscraping)</li>
-  <li>React for frontend</li>
- </ul>
+# [Animad](https://animad.herokuapp.com/)
+## Stream an download your favorite animes for free
+
+Animad is an anime streaming web app that scrapes data and video URLs from other third-party apps.
+Developed using JavaScript.
+
+## Features
+
+- Stream episodes
+- Watch latest episodes
+- Search for your fav animes
+- Get animes based on genre
+- Get the most popular animes
+
+Most important: You don't have to deal with annoying ads.
+
+## Tech
+
+Animad uses a number of techs to work properly:
+
+- [ReactJS] - The framework that powers animad's frontend
+- [Node.js] - The rruntime environment to get the backend up and running.
+- [Cheerio.js] - The packge for scraping
+- [Twitter Bootstrap] - great UI boilerplate for modern web apps
+
+## Note:
+To get rid of the Ads Animad uses the `sandbox` property. You can easily watch animes ad free on any browser except `Google Chrome`.
+
+## License
+MIT
+
+
