@@ -3,7 +3,8 @@ import React from 'react'
 const VideoPlayer = ({url}) => {
     return (
 
-        <iframe className='mb-4' title="outer" src={url} style = {{
+        <iframe sandbox = "allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+            className='mb-4' title="outer" src={url} style = {{
             position: "relative",
             boxShadow: "2% 2% 4% rgba(0,0,0,0.5)",
             width: "100%",
