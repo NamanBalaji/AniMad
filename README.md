@@ -23,6 +23,13 @@ Animad uses a number of techs to work properly:
 - [Cheerio.js] - The packge for scraping
 - [Twitter Bootstrap] - great UI boilerplate for modern web apps
 
+## Running Locally
+
+- Clone the repo
+- Navigate to the root of the project and run `npm install`.
+- Similarly navigate to the client folder `./client` and run `npm install` again.
+- From the root of the project run `node app.js` and from the client folder run `npm start`.
+
 ## Note:
 To get rid of the Ads Animad uses the `sandbox` property. You can easily watch animes ad free on any browser except `Google Chrome`.
 
