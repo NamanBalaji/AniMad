@@ -29,7 +29,6 @@ app.get('/popular/:page', (req, res)=>{
                     let id = $(this).children('a').attr().href.slice(10);
                     let image = $(this).children('a').children('img').attr().src;
                     results[index] = {title, id, image};
-                    console.log(results[0]);
                 });
                 res.status(200).json({results});
             } catch(e){
@@ -140,7 +139,7 @@ app.get('/watch/:id/:episode', (req, res) => {
                     if (scrapp.success) {
                        return res.status(200).json({ links: scrapp.data.sources, link });
                     }
-                    return res.status(200).json({ link })
+                    return res.status(200).json({ link, links:[] })
                 }
                 nl()
             }

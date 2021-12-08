@@ -17,6 +17,7 @@ const Episode = () => {
           .then((res)=>res.json())
           .then(
               (data) => {
+                console.log(data);
                 if (data.links.length >= 1 || data.link.length >= 2) {
                   if (data.links.length === 0 || data.links[0].label === "hls P") {
                     setUrl(data.link);
